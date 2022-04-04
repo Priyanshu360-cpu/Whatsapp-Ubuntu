@@ -1,0 +1,27 @@
+{
+  "name": "whatsapp",
+  "version": "1.0.0",
+  "description": "Whatsapp made for ubuntu with electron js",
+  "main": "index.ts",
+  "scripts": {
+    "test": "electron."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Priyanshu360-cpu/Whatsapp-Ubuntu.git"
+  },
+  "keywords": [
+    "Whatsapp",
+    "Linux"
+  ],
+  "author": "Priyanshu360-cpu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Priyanshu360-cpu/Whatsapp-Ubuntu/issues"
+  },
+  "homepage": "https://github.com/Priyanshu360-cpu/Whatsapp-Ubuntu#readme",
+  "dependencies": {
+    "electron-reload": "^2.0.0-alpha.1",
+    "remote": "^0.2.6"
+  }
+}
