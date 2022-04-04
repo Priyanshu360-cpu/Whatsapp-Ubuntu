@@ -19,8 +19,8 @@ npx electron .
 CTRL+I -- ZOOM IN
 CTRL+O -- ZOOM OUT
 CTRL+R -- RESET SCREEN
-CTRL+F5 -- RELOAD SCREEN
-CTRL +Q -- QUIT SCREEN
+CTRL+F5 -- SCREENSHOT A PAGE
+CTRL+Q -- QUIT SCREEN
 ```
 
 # CREDITS
@@ -29,4 +29,4 @@ The application uses whatsapp web(https://web.whatsapp.com/) to load the content
 
 Special Shortcut keys are allocated in the App
 
-If you liked the project, dont forget to star it <3
+If you liked the project, dont forget to star it ⭐
