@@ -12,6 +12,10 @@ npm i
 npx electron .
 or 
 npm start
+
+or
+
+Run the Shell script start.sh
 ```
 
 # Shortcut Keys
