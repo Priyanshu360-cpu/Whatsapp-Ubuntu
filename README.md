@@ -10,7 +10,8 @@ git clone https://github.com/Priyanshu360-cpu/Whatsapp-Ubuntu
 npm i
 
 npx electron .
-
+or 
+npm start
 ```
 
 # Shortcut Keys
