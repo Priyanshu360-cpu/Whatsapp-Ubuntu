@@ -4,7 +4,6 @@ const path = require('path')
 const electron = require('electron');
 var ignored=["whatsapp","WhatsApp Web","WhatsApp"];
 const { clipboard } = require('electron')
-const {getCurrentWindow} = require('electron');
 const options = {
   title: 'Whatsapp',
   subtitle: 'LINUX',
