@@ -2,7 +2,7 @@
   "name": "whatsapp",
   "version": "1.0.0",
   "description": "Whatsapp made for ubuntu with electron js",
-  "main": "index.ts",
+  "main": "whatsapp.ts",
   "scripts": {
     "start": "electron ."
   },
