@@ -2,7 +2,7 @@ const { app, globalShortcut, BrowserWindow, Notification} = require("electron");
 const url = require("url");
 const path = require('path')
 const electron = require('electron');
-const ignored=["whatsapp","WhatsApp Web","WhatsApp"];
+var ignored=["whatsapp","WhatsApp Web","WhatsApp"];
 const { clipboard } = require('electron')
 const {getCurrentWindow} = require('electron');
 const options = {
@@ -34,6 +34,7 @@ if(title==ignored[i]) o=1;
       if(o==0){
         let myNotification = new Notification(options);
         myNotification.show();
+        ignored.push(title)
       };
       o=0;
     })
