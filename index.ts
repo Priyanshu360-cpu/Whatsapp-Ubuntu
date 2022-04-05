@@ -17,6 +17,7 @@ function newApp() {
     const win = new BrowserWindow({
         width: 800,
         height: 600,
+        autoHideMenuBar: true,
         icon: path.join(__dirname,'./images/174879.png')
       })
       win.loadURL('https://web.whatsapp.com/', { userAgent: USER_AGENT });
