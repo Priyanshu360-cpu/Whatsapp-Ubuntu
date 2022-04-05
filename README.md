@@ -23,11 +23,11 @@ git clone https://github.com/Priyanshu360-cpu/Whatsapp-Ubuntu
 
 cd Whatsapp-Ubuntu
 
-Run the Shell script start.sh
+Run the Shell script install.sh
 
-chmod +x start.sh
+chmod +x install.sh
 
-./start.sh
+./install.sh
 ```
 
 # Shortcut Keys
