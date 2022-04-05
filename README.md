@@ -7,15 +7,27 @@ The given application was built with **Electron JS**.
 ```
 git clone https://github.com/Priyanshu360-cpu/Whatsapp-Ubuntu
 
+cd Whatsapp-Ubuntu
+
 npm i
 
 npx electron .
 or 
 npm start
+```
 
-or
+# Automatic Installation Process
+
+```
+git clone https://github.com/Priyanshu360-cpu/Whatsapp-Ubuntu
+
+cd Whatsapp-Ubuntu
 
 Run the Shell script start.sh
+
+chmod +x start.sh
+
+./start.sh
 ```
 
 # Shortcut Keys
