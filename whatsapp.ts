@@ -12,7 +12,7 @@ const options = {
   icon: path.join(__dirname, './images/174879.png'),
   hasReply: true
 }
-const agents = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36';
+const agents = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36';
 function newApp() {
     const win = new BrowserWindow({
         width: 800,
@@ -21,6 +21,7 @@ function newApp() {
         icon: path.join(__dirname,'./images/174879.png')
       })
       win.loadURL('https://web.whatsapp.com/', { userAgent: agents });
+      win.webContents.reloadIgnoringCache();
       globalShortcut.register("CommandOrControl+I", () => {
         if(win.webContents.zoomLevel<=3)
         win.webContents.zoomLevel+=1;
@@ -43,6 +44,9 @@ if(title==ignored[i]) o=1;
       win.webContents.zoomLevel-=1;
   });
   globalShortcut.register("CommandOrControl+R", () => {
+    win.webContents.reloadIgnoringCache();
+});
+  globalShortcut.register("CommandOrControl+L", () => {
     win.webContents.zoomLevel=0;
 });
  globalShortcut.register("CommandOrControl+Q", () => {
