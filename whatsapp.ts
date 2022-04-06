@@ -36,6 +36,8 @@ if(title==ignored[i]) o=1;
         let myNotification = new Notification(options);
         myNotification.show();
         ignored.push(title)
+        var checker=title;
+        setInterval(()=>{if(checker!=title)ignored=["whatsapp","WhatsApp Web","WhatsApp"]},5000)
       };
       o=0;
     })
