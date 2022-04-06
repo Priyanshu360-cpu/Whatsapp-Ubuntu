@@ -1,4 +1,4 @@
-const { app, globalShortcut, BrowserWindow, Notification} = require("electron");
+const { app, globalShortcut, BrowserWindow, Notification,  shell } = require("electron");
 const url = require("url");
 const path = require('path')
 const electron = require('electron');
@@ -8,6 +8,14 @@ const options = {
   title: 'Whatsapp',
   subtitle: 'LINUX',
   body: 'You Recieved a new Notification ',
+  silent: false,
+  icon: path.join(__dirname, './images/174879.png'),
+  hasReply: true
+}
+const alerter = {
+  title: 'Whatsapp',
+  subtitle: 'LINUX',
+  body: 'Opened in Browser',
   silent: false,
   icon: path.join(__dirname, './images/174879.png'),
   hasReply: true
@@ -28,6 +36,13 @@ function newApp() {
     });
     win.on('page-title-updated', () => {
       const title = win.getTitle();
+      win.webContents.setWindowOpenHandler(details => {
+        if (details.url != win.webContents.getURL()) {
+            shell.openExternal(details.url);
+            let myNo = new Notification(alerter);
+            myNo.show();
+        }
+    });
       var o=0;
       for(let i=0;i<ignored.length;i++){
 if(title==ignored[i]) o=1;
