@@ -4,7 +4,11 @@
   "description": "Whatsapp made for ubuntu with electron js",
   "main": "whatsapp.ts",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "dist": "tsc",
+    "watch": "tsc -w",
+    "lint": "eslint -c .eslintrc --ext .ts ",
+    "build": "npm run dist && electron-builder"
   },
   "repository": {
     "type": "git",
@@ -23,6 +27,7 @@
   "dependencies": {
     "electron-reload": "^2.0.0-alpha.1",
     "fs": "^0.0.1-security",
-    "remote": "^0.2.6"
+    "remote": "^0.2.6",
+    "typescript": "^4.6.3"
   }
 }
