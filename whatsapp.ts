@@ -1,6 +1,7 @@
 const { app, globalShortcut, BrowserWindow, Notification,  shell } = require("electron");
 const url = require("url");
 const path = require('path')
+
 const electron = require('electron');
 var ignored=["whatsapp","WhatsApp Web","WhatsApp"];
 const { clipboard } = require('electron')
@@ -26,7 +27,10 @@ function newApp() {
         width: 800,
         height: 600,
         autoHideMenuBar: true,
-        icon: path.join(__dirname,'./images/174879.png')
+        icon: path.join(__dirname,'./images/174879.png'),
+        webPreferences: {
+          devTools: false
+          }
       })
       win.loadURL('https://web.whatsapp.com/', { userAgent: agents });
       win.webContents.reloadIgnoringCache();
@@ -69,6 +73,21 @@ if(title==ignored[i]) o=1;
  globalShortcut.register("CommandOrControl+Q", () => {
  app.quit()
 });
+globalShortcut.register("CommandOrControl+Shift+I", () => {
+  const disable = {
+    title: 'Whatsapp',
+    subtitle: 'LINUX',
+    body: 'Not Permitted',
+    silent: false,
+    icon: path.join(__dirname, './images/174879.png'),
+    hasReply: true
+  }
+  let myNo = new Notification(disable);
+            myNo.show();
+ });
+ 
+
+
 globalShortcut.register("CommandOrControl+F5", () => {
   win.webContents
         .capturePage({
