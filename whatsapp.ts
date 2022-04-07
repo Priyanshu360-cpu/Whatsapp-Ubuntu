@@ -13,7 +13,7 @@ const options = {
   icon: path.join(__dirname, './images/174879.png'),
   hasReply: true
 }
-const alerter = {
+var alerter = {
   title: 'Whatsapp',
   subtitle: 'LINUX',
   body: 'Opened in Browser',
@@ -42,6 +42,7 @@ function newApp() {
       const title = win.getTitle();
       win.webContents.setWindowOpenHandler(details => {
         if (details.url != win.webContents.getURL()) {
+            alerter.body=`${details.url.split('/')[2].split('.')[1]} Opened in Browser`
             shell.openExternal(details.url);
             let myNo = new Notification(alerter);
             myNo.show();
