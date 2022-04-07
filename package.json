@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/Priyanshu360-cpu/Whatsapp-Ubuntu#readme",
   "dependencies": {
+    "electron-context-menu": "^3.1.2",
     "electron-reload": "^2.0.0-alpha.1",
     "fs": "^0.0.1-security",
     "remote": "^0.2.6",
