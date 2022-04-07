@@ -49,7 +49,7 @@ function newApp() {
       const title = win.getTitle();
       win.webContents.setWindowOpenHandler(details => {
         if (details.url != win.webContents.getURL()) {
-            alerter.body=`${details.url.split('/')[2].split('.')[1]} Opened in Browser`
+            alerter.body=`${details.url.split('/')[2].split('.')[0]=="www"?details.url.split('/')[2].split('.')[1]:details.url.split('/')[2].split('.')[0]} Opened in Browser`
             shell.openExternal(details.url);
             let myNo = new Notification(alerter);
             myNo.show();
