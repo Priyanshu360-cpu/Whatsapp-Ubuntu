@@ -86,7 +86,23 @@ globalShortcut.register("CommandOrControl+Shift+I", () => {
   let myNo = new Notification(disable);
             myNo.show();
  });
- 
+ globalShortcut.register("CommandOrControl+K", () => {
+  const disable = {
+    title: 'Whatsapp',
+    subtitle: 'LINUX',
+    body: `    CTRL+I -- ZOOM IN
+    CTRL+O -- ZOOM OUT
+    CTRL+L -- RESET ZOOM LEVEL
+    CTRL+R -- RELOAD SCREEN
+    CTRL+F5 -- SCREENSHOT A PAGE
+    CTRL+Q -- QUIT SCREEN`,
+    silent: false,
+    icon: path.join(__dirname, './images/174879.png'),
+    hasReply: true
+  }
+  let myN = new Notification(disable);
+  myN.show();
+ });
 
 
 globalShortcut.register("CommandOrControl+F5", () => {
