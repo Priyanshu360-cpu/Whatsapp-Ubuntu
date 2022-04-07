@@ -22,6 +22,13 @@ var alerter = {
   hasReply: true
 }
 const agents = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36';
+const contextMenu = require('electron-context-menu');
+contextMenu({
+	showSaveImageAs: true,
+  showInspectElement: false,
+  showCopyImage: true
+
+});
 function newApp() {
     const win = new BrowserWindow({
         width: 800,
