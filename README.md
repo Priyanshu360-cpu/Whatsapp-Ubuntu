@@ -46,7 +46,7 @@ CTRL+K -- GET SHORTCUT KEYS DETAIL
 
 # CREDITS
 
-The application uses whatsapp web(https://web.whatsapp.com/) to load the content 
+The application uses [whatsapp web](https://web.whatsapp.com/) to load the content 
 
 Special Shortcut keys are allocated in the App
 
