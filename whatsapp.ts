@@ -10,7 +10,7 @@ const options = {
   subtitle: 'LINUX',
   body: 'You Recieved a new Notification ',
   silent: false,
-  icon: path.join(__dirname, './images/174879.png'),
+  icon: path.join(__dirname, './images/512x512.png'),
   hasReply: true
 }
 var alerter = {
@@ -18,7 +18,7 @@ var alerter = {
   subtitle: 'LINUX',
   body: 'Opened in Browser',
   silent: false,
-  icon: path.join(__dirname, './images/174879.png'),
+  icon: path.join(__dirname, './images/512x512.png'),
   hasReply: true
 }
 const agents = 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.60 Safari/537.36';
@@ -34,7 +34,7 @@ function newApp() {
         width: 800,
         height: 600,
         autoHideMenuBar: true,
-        icon: path.join(__dirname,'./images/174879.png'),
+        icon: path.join(__dirname,'./images/512x512.png'),
         webPreferences: {
           devTools: false
           }
@@ -87,7 +87,7 @@ globalShortcut.register("CommandOrControl+Shift+I", () => {
     subtitle: 'LINUX',
     body: 'Not Permitted',
     silent: false,
-    icon: path.join(__dirname, './images/174879.png'),
+    icon: path.join(__dirname, './images/512x512.png'),
     hasReply: true
   }
   let myNo = new Notification(disable);
@@ -104,7 +104,7 @@ globalShortcut.register("CommandOrControl+Shift+I", () => {
     CTRL+F5 -- SCREENSHOT A PAGE
     CTRL+Q -- QUIT SCREEN`,
     silent: false,
-    icon: path.join(__dirname, './images/174879.png'),
+    icon: path.join(__dirname, './images/512x512.png'),
     hasReply: true
   }
   let myN = new Notification(disable);
