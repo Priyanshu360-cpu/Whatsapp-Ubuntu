@@ -2,7 +2,7 @@
 
 The given application was built with **Electron JS**.
 
-**Direct Installation Link -** [Whatsapp-Ubuntu](https://github.com/Priyanshu360-cpu/Whatsapp-Ubuntu/releases/tag/v1.0.0.0)
+**Direct Installation Link -** [Whatsapp-Ubuntu](https://github.com/Priyanshu360-cpu/Whatsapp-Ubuntu/releases/tag/v1.0.0.1)
 
 # Manual Installation
 
